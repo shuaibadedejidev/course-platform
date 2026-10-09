@@ -2027,7 +2027,8 @@ a:focus-visible {
 }
 
 .catalog-course-card:hover .catalog-art-open,
-.catalog-course-card:focus-visible .catalog-art-open {
+.catalog-course-card:focus-visible .catalog-art-open,
+.catalog-course-card:focus-within .catalog-art-open {
   opacity: 1;
   transform: translate(0, 0);
 }

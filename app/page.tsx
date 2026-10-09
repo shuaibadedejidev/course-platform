@@ -336,7 +336,7 @@ export default function Home() {
                   <p className="course-description">{course.description}</p>
                   <div className="course-card-footer">
                     <span>{course.lessons}</span>
-                    <Link href={`/courses/${course.slug}`} aria-label={`Explore courses including ${course.title}`}>
+                    <Link href="/courses" aria-label={`Explore courses including ${course.title}`}>
                       <ArrowIcon />
                     </Link>
                   </div>

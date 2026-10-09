@@ -33,7 +33,7 @@ export const courses: Course[] = [
     description:
       "Build a confident foundation in modern frontend development, then bring your ideas to life with thoughtful, interactive interfaces.",
     level: "Beginner friendly",
-    duration: "4h 20m",
+    duration: "1h 55m",
     price: 25,
     artwork: "ember",
     instructor: "The Goodcourse team",
@@ -71,7 +71,7 @@ export const courses: Course[] = [
     description:
       "Learn practical TypeScript through approachable examples, from your first type annotations to the patterns you will use in real projects.",
     level: "Beginner friendly",
-    duration: "3h 45m",
+    duration: "1h 56m",
     price: 25,
     artwork: "violet",
     instructor: "The Goodcourse team",
@@ -109,7 +109,7 @@ export const courses: Course[] = [
     description:
       "Explore layout, type, color, and component decisions that help digital products feel clear, considered, and a little more human.",
     level: "All levels",
-    duration: "2h 55m",
+    duration: "1h 32m",
     price: 25,
     artwork: "mint",
     instructor: "The Goodcourse team",
@@ -140,7 +140,7 @@ export const courses: Course[] = [
     description:
       "Create a more sustainable creative routine with simple tools for prioritizing, protecting your attention, and finding a pace you can keep.",
     level: "All levels",
-    duration: "2h 30m",
+    duration: "1h 15m",
     price: 25,
     artwork: "blue",
     instructor: "The Goodcourse team",
@@ -171,7 +171,7 @@ export const courses: Course[] = [
     description:
       "Get the building blocks of an independent creative practice, from finding the right projects to setting expectations and building trust.",
     level: "Beginner friendly",
-    duration: "3h 10m",
+    duration: "1h 28m",
     price: 25,
     artwork: "rose",
     instructor: "The Goodcourse team",
@@ -202,7 +202,7 @@ export const courses: Course[] = [
     description:
       "Build the practical habits behind accessible interfaces, covering semantic structure, keyboard access, contrast, and inclusive testing.",
     level: "Some experience",
-    duration: "3h 35m",
+    duration: "1h 34m",
     price: 25,
     artwork: "gold",
     instructor: "The Goodcourse team",

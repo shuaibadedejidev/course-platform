@@ -1,23 +1,13 @@
-Sorry—I meant I’d check the project files already in your folder so the plan fits what you have, rather than assume a brand-new setup. I haven’t changed anything. I’ll keep this to inspection, then give you the implementation plan.
-
-Ran terminal command: Get-Content package.json; Get-ChildItem app -Recurse -File | Select-Object -ExpandProperty FullName
-
-Ran terminal command: Get-Content README.md; Get-Content AGENTS.md; Get-Content next.config.ts; Get-Content tsconfig.json
-
-Ran terminal command: git -C 'C:\Users\Bright Tech\Desktop\course-platform' status --short --branch
-
-Here’s the implementation plan tailored to the existing project. **I have not changed any files.**
+# Implementation plan
 
 ### What I found
 
-The project is currently a minimal Next.js app: `package.json` lists Next.js **16.3.8**, React, and TypeScript, but not shadcn/ui or the planned service integrations. The app currently consists of the starter pages and styles in `app/`.
-
-**Important setup issue:** Git reports `C:\Users\Bright Tech`—your home directory—as the repository root, rather than `course-platform`. Its status consequently includes unrelated files outside the project. Before making project changes, the repository boundary needs to be safely corrected or confirmed so work stays confined to the course-platform folder.
+The initial project was a minimal Next.js app: `package.json` listed Next.js **16.3.8**, React, and TypeScript, but not shadcn/ui or the planned service integrations. The app initially consisted of the starter pages and styles in `app/`.
 
 ### Implementation plan
 
-1. **Make the project boundary safe; verify framework guidance**
-   - Confirm and correct the Git root without disturbing existing user files.
+1. **Verify project setup and framework guidance**
+   - Confirm the project root before running setup commands.
    - Read the installed Next.js 16.3.8 guides before implementation, as required by the project instructions.
    - Set up shadcn/ui and a basic test foundation, then add required dependencies only after confirming current provider guidance.
 

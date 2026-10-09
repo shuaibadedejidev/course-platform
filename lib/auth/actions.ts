@@ -32,10 +32,14 @@ export async function signUpWithEmail(
     return { error: "Your password must be at least 8 characters." };
   }
 
-  const { error } = await getAuth().signUp.email({ email, name, password });
+  try {
+    const { error } = await getAuth().signUp.email({ email, name, password });
 
-  if (error) {
-    return { error: error.message || "We couldn't create your account." };
+    if (error) {
+      return { error: error.message || "We couldn't create your account." };
+    }
+  } catch {
+    return { error: "We couldn't create your account. Please try again." };
   }
 
   redirect("/account");
@@ -52,10 +56,14 @@ export async function signInWithEmail(
     return { error: "Enter a valid email address and password." };
   }
 
-  const { error } = await getAuth().signIn.email({ email, password });
+  try {
+    const { error } = await getAuth().signIn.email({ email, password });
 
-  if (error) {
-    return { error: error.message || "We couldn't sign you in." };
+    if (error) {
+      return { error: error.message || "We couldn't sign you in." };
+    }
+  } catch {
+    return { error: "We couldn't sign you in. Please try again." };
   }
 
   redirect("/account");

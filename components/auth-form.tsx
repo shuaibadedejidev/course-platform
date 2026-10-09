@@ -62,7 +62,7 @@ export function AuthForm({ action, mode }: AuthFormProps) {
 
       <div className="auth-divider"><span>or with email</span></div>
 
-      <form action={formAction} className="auth-form">
+      <form action={formAction} onSubmit={() => setSocialError("")} className="auth-form">
         {isSignUp && (
           <label className="auth-field">
             <span>Name</span>
@@ -101,9 +101,9 @@ export function AuthForm({ action, mode }: AuthFormProps) {
           />
         </label>
 
-        {(state?.error || socialError) && (
+        {(socialError || state?.error) && (
           <p className="auth-error" role="alert">
-            {state?.error || socialError}
+            {socialError || state?.error}
           </p>
         )}
 
